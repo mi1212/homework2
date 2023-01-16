@@ -78,7 +78,7 @@ class TextFieldViewController: UIViewController {
         button.animationTapButton()
         if textField.text?.count != 0 {
             let text = textField.text
-            let ac = UIActivityViewController(activityItems: [text], applicationActivities: nil)
+            let ac = UIActivityViewController(activityItems: [text as Any], applicationActivities: nil)
             present(ac, animated: true)
         } else {
                 let animation = CABasicAnimation(keyPath: "position")
